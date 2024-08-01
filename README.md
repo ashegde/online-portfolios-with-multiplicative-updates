@@ -14,6 +14,10 @@ The implementation that I have included here can be run by installing the packag
 
 For the majority of strategies tested, we start with a uniform weights across the market. Our best performing algorithm ends up highly concentrated (due to the high learning rate) in the best performing stocks. Are these results realistic? Probably not. For example, things like trading costs are not taken into account.
 
+![portfolio_wealth](https://github.com/user-attachments/assets/4495e26e-5684-49a6-a193-cae2cfb66134)
+
+![holdings_over_time](https://github.com/user-attachments/assets/c8d15999-57b1-4661-9a02-e41b9602459c)
+
 There are a several follow-up directions that I think would be quite interesting.
 
 First, making things more realistic to account for trading costs, tax implications, etc. This might require constrained optimization approaches akin to those in model predictive control and
