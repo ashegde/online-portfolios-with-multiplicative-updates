@@ -1,0 +1,4 @@
+matplotlib==3.7.1
+numpy==1.26.4
+pandas==2.1.4
+yfinance==0.2.41
