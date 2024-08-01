@@ -31,6 +31,6 @@ Leveraging machine learned models in this capacity could help incorporate side i
 
 Third (and related to second), incorporation of methods from UQ and active learning.
 
-Fourth, the themes of online optimization of portfolios exist beyond financial markets -- where can these tools be productively applied?
+Fourth, the themes of online optimization of portfolios exist beyond financial markets -- where else can these tools be productively applied?
 
 Lots of new things to learn :)
