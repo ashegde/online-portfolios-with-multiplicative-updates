@@ -13,8 +13,10 @@ In particular, this latter reference contextualizes and classifies a variety of 
 The implementation that I have included here can be run by installing the packages in the `requirements.txt` and evaluating `simulation.py`. In this example, we investigate portfolios made up of stocks from the S&P 500 with a start date of 2005-01-01. Note that the example differs from the above references in this aspect as we look at for more stocks. As such, we find that larger learning rates lead to higher total wealth.
 
 For the majority of strategies tested, we start with a uniform weights across the market. Our best performing algorithm ends up highly concentrated (due to the high learning rate) in the best performing stocks. Are these results realistic? Probably not. For example, things like trading costs are not taken into account.
+
 ![portfolio_wealth](https://github.com/user-attachments/assets/4495e26e-5684-49a6-a193-cae2cfb66134)
 ![holdings_over_time](https://github.com/user-attachments/assets/c8d15999-57b1-4661-9a02-e41b9602459c)
+
 There are a several follow-up directions that I think would be quite interesting.
 
 First, making things more realistic to account for trading costs, tax implications, etc. This might require constrained optimization approaches akin to those in model predictive control and
