@@ -17,7 +17,7 @@ For the majority of strategies tested, we start with a uniform weights across th
 ![portfolio_wealth](https://github.com/user-attachments/assets/4495e26e-5684-49a6-a193-cae2cfb66134)
 ![holdings_over_time](https://github.com/user-attachments/assets/c8d15999-57b1-4661-9a02-e41b9602459c)
 
-Interestingly, at various time instances, the portfolio becomes rather highly concentrated in certain -- and sometimes singular -- stocks with high past-day performance. While this in general seems quite risky, and perhaps defies the conventional wisdom of diversification, this behavior is quite precedented. For example, in discussing Kelly-style investing strategies, William Ziemba writes/quotes in:
+Interestingly, at various time instances, the portfolio becomes rather highly concentrated in certain stocks with high past-day performance. While this in general seems quite risky, and perhaps defies the conventional wisdom of diversification, this behavior is quite precedented. For example, in discussing Kelly-style investing strategies, William Ziemba writes/quotes in:
 
 Ziemba, W. T. (2015). A response to Professor Paul A. Samuelson's objections to Kelly capital growth investing. Journal of Portfolio Management, 42(1), 153.
 
@@ -28,18 +28,20 @@ the following:
 
 There are a several follow-up directions that I think would be quite interesting.
 
-First, making things more realistic to account for trading costs, tax implications, liquidity issues and other frictions, etc. This might require constrained optimization approaches akin to those in model predictive control and
+First, it is clear that tuning hyperparameters such as the learning rate is quite important as it impacts how quickly the algorithm adapts or is reinforced by changes in price relatives. Characterizing the learning rate and its relation to diversification and risk seems useful. In this exponentiated gradient algorithm, this is characterized by the KL divergence penalty between the previous and current weight configurations. 
+
+Second, making things more realistic to account for trading costs, tax implications, liquidity issues and other frictions, etc. This might require constrained optimization approaches akin to those in model predictive control and more general sequential decision algorithms, e.g.,
 
 Boyd, S., Johansson, K., Kahn, R., Schiele, P., & Schmelzer, T. (2024). Markowitz Portfolio Construction at Seventy. arXiv preprint arXiv:2401.05080.
 
-Second, safe and robust inclusion of "approximately correct" probabilistic prediction models, akin to:
+Third, safe and robust inclusion of "approximately correct" probabilistic prediction models, akin to:
 
 Mitzenmacher, M., & Vassilvitskii, S. (2022). Algorithms with predictions. Communications of the ACM, 65(7), 33-35.
 
 Leveraging machine learned models in this capacity could help incorporate side information from alternative data sources.
 
-Third (and related to second), incorporation of methods from UQ and active learning.
+Fourth (and related to third), incorporation of methods from UQ and active learning.
 
-Fourth, the themes of online optimization of portfolios exist beyond financial markets -- where else can these tools be productively applied?
+Fifth, the themes of online optimization of portfolios exist beyond financial markets -- e.g., scientific funding of research projects, ensembles/mixtures of models, etc. Where else can these tools be productively applied?
 
 Lots of new things to learn :)
