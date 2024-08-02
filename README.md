@@ -17,9 +17,18 @@ For the majority of strategies tested, we start with a uniform weights across th
 ![portfolio_wealth](https://github.com/user-attachments/assets/4495e26e-5684-49a6-a193-cae2cfb66134)
 ![holdings_over_time](https://github.com/user-attachments/assets/c8d15999-57b1-4661-9a02-e41b9602459c)
 
+Interestingly, at various time instances, the portfolio becomes rather highly concentrated in certain -- and sometimes singular -- stocks with high past-day performance. While this in general seems quite risky, and perhaps defies the conventional wisdom of diversification, this behavior is quite precedented. For example, in discussing Kelly-style investing strategies, William Ziemba writes/quotes in:
+
+Ziemba, W. T. (2015). A response to Professor Paul A. Samuelson's objections to Kelly capital growth investing. Journal of Portfolio Management, 42(1), 153.
+
+the following:
+
+> Other examples of investors who behave as if they were full or close to full Kelly investors are Warren Buffett, George Soros and John Maynard Keynes who all have portfolios with the following Kelly characteristics.:
+>>"the portfolios are highly concentrated, not diversified, with huge positions in the few very best investments with much monthly variation and many monthly losses but very high final wealth most of the time."
+
 There are a several follow-up directions that I think would be quite interesting.
 
-First, making things more realistic to account for trading costs, tax implications, etc. This might require constrained optimization approaches akin to those in model predictive control and
+First, making things more realistic to account for trading costs, tax implications, liquidity issues and other frictions, etc. This might require constrained optimization approaches akin to those in model predictive control and
 
 Boyd, S., Johansson, K., Kahn, R., Schiele, P., & Schmelzer, T. (2024). Markowitz Portfolio Construction at Seventy. arXiv preprint arXiv:2401.05080.
 
