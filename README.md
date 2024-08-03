@@ -12,7 +12,7 @@ In particular, this latter reference contextualizes and classifies a variety of 
 
 The implementation that I have included here can be run by installing the packages in the `requirements.txt` and evaluating `simulation.py`. In this example, we investigate portfolios made up of stocks from the S&P 500 with a start date of 2005-01-01. Note that the example differs from the above references in this aspect as we look at for more stocks. As such, we find that larger learning rates lead to higher total wealth.
 
-For the majority of strategies tested, we start with a uniform weights across the market. Our best performing algorithm ends up highly concentrated (due to the high learning rate) in the best performing stocks. Are these results realistic? Probably not. For example, things like trading costs are not taken into account.
+For the majority of strategies tested, we start with a uniform weights across the market. Our best performing algorithm ends up highly concentrated (due to the high learning rate) in the best performing stocks. Are these results realistic? Probably not. For example, things like trading costs and liquidity are not taken into account.
 
 ![portfolio_wealth](https://github.com/user-attachments/assets/4495e26e-5684-49a6-a193-cae2cfb66134)
 ![holdings_over_time](https://github.com/user-attachments/assets/c8d15999-57b1-4661-9a02-e41b9602459c)
@@ -28,9 +28,9 @@ the following:
 
 There are a several follow-up directions that I think would be quite interesting.
 
-First, it is clear that tuning hyperparameters such as the learning rate is quite important as it impacts how quickly the algorithm adapts or is reinforced by changes in price relatives. Characterizing the learning rate and its relation to diversification and risk seems useful. In this exponentiated gradient algorithm, this is characterized by the KL divergence penalty between the previous and current weight configurations. 
+First, it is clear that tuning hyperparameters such as the learning rate is quite important as it impacts how quickly the algorithm adapts or is reinforced by changes in price relatives. Characterizing the learning rate and its relation to diversification and risk seems useful. In this exponentiated gradient algorithm, this is characterized by the KL divergence penalty between the previous and current weight configurations (which can be interpreted as a switching cost). 
 
-Second, making things more realistic to account for trading costs, tax implications, liquidity issues and other frictions, etc. This might require constrained optimization approaches akin to those in model predictive control and more general sequential decision algorithms, e.g.,
+Second, making things more realistic to account for trading costs, tax implications, liquidity issues and other frictions, etc. This might require constrained optimization approaches akin to those in model predictive control and more general sequential decision algorithms, e.g., as discussed in
 
 Boyd, S., Johansson, K., Kahn, R., Schiele, P., & Schmelzer, T. (2024). Markowitz Portfolio Construction at Seventy. arXiv preprint arXiv:2401.05080.
 
